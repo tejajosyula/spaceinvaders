@@ -1,0 +1,9 @@
+__pycache__
+.vscode
+resources/__pycache__
+resources/images/background_resized.png
+resources/images/enemy_resized.png
+resources/images/bullet_resized.png
+resources/images/player_resized.png
+resources/images/fireball_resized.png
+images.text
