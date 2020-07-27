@@ -141,7 +141,6 @@ while(inside_the_game):
                 playerX_change = 0
     #bullet handling
     for bullets in bullet_array[:]:
-        
         if bullets.state == "fire":
             #bullet_flag2 = True
             bullets.fire_bullet()
@@ -151,7 +150,10 @@ while(inside_the_game):
                     collision_sound = mixer.Sound('resources/Sounds/explosion.wav')
                     collision_sound.play()
                     score_value+=50
-                    bullet_array.remove(bullets)
+                    try:
+                        bullet_array.remove(bullets)
+                    except:
+                        pass
                     enemy1.add_enemy()
                     counter-=1
             if bullets.bulletY<=0:
